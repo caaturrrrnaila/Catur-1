@@ -32,51 +32,51 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: AKUN1
+  - name: hamba
     server: quiz.int.vidio.com
-    port: 80
-    type: vmess
-    uuid: 396415b0-6f7d-4df3-9d50-1a3ff9115b1a
+    port: 443
+    type: vless
+    uuid: c480ef2a-97d6-40d9-a44f-45881bf136b1
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: id2-ray.ipservers.xyz
+    servername: client.candrassh2.my.id
     network: ws
     ws-opts:
-      path: /JAGOANSSH/
+      path: /vless
       headers:
-        Host: id2-ray.ipservers.xyz
+        Host: client.candrassh2.my.id
     udp: true
-  - name: AKUN2
+  - name: hamba
     server: quiz.int.vidio.com
     port: 443
     type: vless
-    uuid: 9cf9a9b0-2e2e-45bd-ac6f-5eaa44e30cfe
+    uuid: c480ef2a-97d6-40d9-a44f-45881bf136b1
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id1vless.ipservers.xyz
+    servername: client.candrassh2.my.id
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /vless
       headers:
-        Host: id1vless.ipservers.xyz
+        Host: client.candrassh2.my.id
     udp: true
-  - name: AKUN3
+  - name: hamba
     server: quiz.int.vidio.com
     port: 443
     type: vless
-    uuid: aae98731-898a-4cd3-8c7f-d09af2387d63
+    uuid: c480ef2a-97d6-40d9-a44f-45881bf136b1
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id2vless.ipservers.xyz
+    servername: client.candrassh2.my.id
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /vless
       headers:
-        Host: id2vless.ipservers.xyz
+        Host: client.candrassh2.my.id
     udp: true
 
 proxy-groups:
